@@ -1,9 +1,7 @@
 :root {
   --main-bg-color: #ffffff;
-
   --primary: #000000;
   --secondary: #ff5c5c;
-
   --text-primary: #000000;
   --text-secondary: #ffffff;
 }
@@ -12,15 +10,15 @@ html {
   box-sizing: border-box;
 }
 
+*, :after, :before {
+  box-sizing: inherit;
+}
+
 html,
 body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-}
-
-*, :after, :before {
-  box-sizing: inherit;
 }
 
 .wrapper {
@@ -101,7 +99,6 @@ a:focus {
   opacity: 0.8;
 }
 
-
 /* -- SM --*/
 @media (min-width: 37.5em) {
   .wrapper-inner {
@@ -133,8 +130,6 @@ a:focus {
   }
 }
 
-
-
 /* -- MD --*/
 @media (min-width: 50em) {
   .wrapper-inner {
@@ -162,4 +157,3 @@ a:focus {
     width: 70%;
   }
 }
-
