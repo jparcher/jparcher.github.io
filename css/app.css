@@ -1,9 +1,14 @@
+@font-face {
+  font-family: 'Arvo';
+  font-display: swap;
+  src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKqScQ7Z7o_vo.woff2) format('woff2');
+}
+
 :root {
-  --main-bg-color: #ffffff;
-  --primary: #000000;
-  --secondary: #ff5c5c;
-  --text-primary: #000000;
-  --text-secondary: #ffffff;
+  --main-bg-color: #fff;
+  --primary: #000;
+  --text-primary: #000;
+  --text-secondary: #fff;
 }
 
 html {
@@ -77,7 +82,7 @@ a {
 
 a:hover,
 a:focus {
-  background: var(--secondary);
+  background: var(--primary);
   color: var(--text-secondary);
 }
 
@@ -87,7 +92,7 @@ a:focus {
   padding: 15px 20px;
   font-size: 1rem;
   color: var(--text-secondary);
-  background: var(--secondary);
+  background: var(--primary);
   font-family: "Arvo", serif;
   border: none;
   text-decoration: none;
