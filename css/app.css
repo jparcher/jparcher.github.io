@@ -1,0 +1,165 @@
+:root {
+  --main-bg-color: #ffffff;
+
+  --primary: #000000;
+  --secondary: #ff5c5c;
+
+  --text-primary: #000000;
+  --text-secondary: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-family: "Arvo", serif;
+  font-size: 62.5%;
+  background-color: var(--main-bg-color);
+}
+
+.jp-avatar {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 40%;
+}
+
+.jp-avatar svg {
+  width: 100%;
+  height: 100%;
+}
+
+.intro {
+  padding-bottom: 3vh;
+  margin-top: 8vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  background: var(--secondary);
+  color: var(--text-secondary);
+}
+
+.button {
+  width: 100%;
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  background: var(--secondary);
+  font-family: "Arvo", serif;
+  border: none;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
+
+/* -- SM --*/
+@media (min-width: 37.5em) {
+  .wrapper-inner {
+      width: 70%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .button--half {
+    display: inline-block;
+    width: calc(50% - 0.5rem);
+  }
+
+  .button--half + .button--half {
+    margin-left: 0.8rem;
+  }
+}
+
+
+
+/* -- MD --*/
+@media (min-width: 50em) {
+  .wrapper-inner {
+    width: 70%;
+  }
+
+  .jp-avatar {
+    right: 0;
+  }
+
+  .intro {
+    margin-top: 15vh;
+  }
+}
+
+/* -- LG --*/
+@media (min-width: 64em) {
+  .wrapper {
+    padding: 0;
+    max-width: 60%;
+    margin: 0 auto 0 10%;
+  }
+
+  .wrapper-inner {
+    width: 70%;
+  }
+}
+
