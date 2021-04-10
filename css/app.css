@@ -11,13 +11,9 @@
   --text-secondary: #fff;
 }
 
-html {
-  box-sizing: border-box;
-}
+html { box-sizing: border-box; }
 
-*, :after, :before {
-  box-sizing: inherit;
-}
+*, :after, :before { box-sizing: inherit; }
 
 html,
 body {
@@ -53,23 +49,24 @@ body {
   margin-top: 8vh;
 }
 
-h1 {
-  font-size: 2rem;
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
   padding-bottom: 15px;
 }
 
 h2 {
   font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
   padding-bottom: 10px;
 }
 
 p {
-  margin: 0;
-  padding: 0;
   padding-bottom: 2rem;
   font-size: 1.4rem;
 }
@@ -77,11 +74,11 @@ p {
 a {
   text-decoration: underline;
   color: var(--text-primary);
-  font-weight: bold;
 }
 
 a:hover,
 a:focus {
+  transition: all 0.5s ease;
   background: var(--primary);
   color: var(--text-secondary);
 }
@@ -93,8 +90,7 @@ a:focus {
   font-size: 1rem;
   color: var(--text-secondary);
   background: var(--primary);
-  font-family: "Arvo", serif;
-  border: none;
+  border: 2px solid var(--primary);
   text-decoration: none;
   margin-bottom: 0.5rem;
   text-align: center;
@@ -102,7 +98,8 @@ a:focus {
 
 .button:hover,
 .button:focus {
-  opacity: 0.8;
+  color: var(--text-primary);
+  background: var(--secondary);
 }
 
 /* -- SM --*/
@@ -112,9 +109,7 @@ a:focus {
     min-height: 100vh;
   }
 
-  .wrapper-inner {
-      width: 70%;
-  }
+  .wrapper-inner { width: 70%; }
 
   h1 {
     font-size: 4rem;
@@ -136,26 +131,16 @@ a:focus {
     width: calc(50% - 0.5rem);
   }
 
-  .button--half + .button--half {
-    margin-left: 0.8rem;
-  }
+  .button--half + .button--half { margin-left: 0.8rem; }
 }
 
 /* -- MD --*/
 @media (min-width: 50em) {
+  .wrapper-inner { width: 70%; }
 
+  .jp-avatar { right: 0; }
 
-  .wrapper-inner {
-    width: 70%;
-  }
-
-  .jp-avatar {
-    right: 0;
-  }
-
-  .intro {
-    margin-top: 15vh;
-  }
+  .intro {margin-top: 15vh; }
 }
 
 /* -- LG --*/
@@ -166,7 +151,5 @@ a:focus {
     margin: 0 auto 0 10%;
   }
 
-  .wrapper-inner {
-    width: 70%;
-  }
+  .wrapper-inner { width: 75%; }
 }
