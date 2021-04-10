@@ -49,6 +49,13 @@ body {
   margin-top: 8vh;
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 2rem;
   padding-bottom: 15px;
@@ -64,21 +71,14 @@ p {
   font-size: 1.4rem;
 }
 
-h1,
-h2,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: underline;
   color: var(--text-primary);
-  transition: all 0.5s ease;
 }
 
 a:hover,
 a:focus {
+  transition: all 0.5s ease;
   background: var(--primary);
   color: var(--text-secondary);
 }
