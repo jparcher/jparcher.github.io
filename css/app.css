@@ -38,7 +38,7 @@ body {
 
 .jp-avatar {
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
   right: -20px;
   width: 40%;
 }
