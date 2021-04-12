@@ -5,6 +5,15 @@
   --text-secondary: #fff;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #000;
+    --primary: #fff;
+    --text-primary: #fff;
+    --text-secondary: #000;
+  }
+}
+
 html { box-sizing: border-box; }
 
 *, :after, :before { box-sizing: inherit; }
@@ -15,6 +24,7 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   overflow: hidden;
+  background-color: var(--main-bg-color);
 }
 
 .wrapper {
@@ -24,7 +34,6 @@ body {
   font-family: 'Courier New', monospace;
   letter-spacing: normal;
   font-size: 62.5%;
-  background-color: var(--main-bg-color);
 }
 
 .jp-avatar {
@@ -54,16 +63,19 @@ p {
 h1 {
   font-size: 2rem;
   padding-bottom: 15px;
+  color: var(--text-primary);
 }
 
 h2 {
   font-size: 1.5rem;
   padding-bottom: 10px;
+  color: var(--text-primary);
 }
 
 p {
   padding-bottom: 2rem;
   font-size: 1.4rem;
+  color: var(--text-primary);
 }
 
 a {
