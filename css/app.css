@@ -74,15 +74,23 @@ h2 {
 
 p,
 li {
-  padding-bottom: 1rem;
   font-size: 1.4rem;
   color: var(--text-primary);
+}
+
+p {
+  padding-bottom: 1.5rem;
+
 }
 
 ul {
   margin: 0;
   padding-left: 1rem;
   margin-bottom: 1rem;
+}
+
+li { 
+  padding-bottom: 1rem;
 }
 
 a {
@@ -152,6 +160,7 @@ a:focus {
 @media (min-width: 50em) {
   h1 {
     font-size: 3.25rem;
+    letter-spacing: -1px;
   }
 
   .wrapper-inner { width: 70%; }
